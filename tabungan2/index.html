@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabungan digital</title>
+    <link rel="stylesheet" href="tabungan.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabungan saya</h1>
+        <p>Catatan tabungan anda</p>
+
+        <div class="saldo">
+            <div class="saldo-header">
+                <p>Total tabungan</p>
+                <button id="resetTabungan" type="button" class="reset-btn">Reset data</button>
+            </div>
+            <h2 id="saldo">Rp0</h2>
+        </div>
+
+<div class="box">
+    <h3>Tujuan menabung</h3>
+    
+    <form id="formtujuan">
+
+        <input type="text" id="namaTujuan"
+        placeholder="nama barang">
+
+        <input type="number" id="hargaTujuan"
+        placeholder="harga barang">
+
+        <input type="file" id="gambarTujuan"
+        placeholder="image/*">
+
+        <button type = "submit">Simpan tujuan</button>
+
+    </form>
+
+    <div id="tampilanTujuan"></div>
+</div>
+
+<div class="box">
+    <h3>Tambah Tabungan</h3>
+
+    <form id="formTabungan">
+
+        <select id="tujuanDipilih" aria-label="Pilih tujuan tabungan">
+            <option value="">Pilih tujuan (opsional)</option>
+        </select>
+
+        <input type="text" id="keterangan"
+        placeholder="Keterangan tabungan">
+
+        <input type="number" id="jumlah"
+        placeholder="Jumlah uang">
+
+        <button type="submit">Simpan Tabungan</button>
+
+    </form>
+</div>
+
+        <div class="box">
+            <h3>Riwayat Tabungan</h3>
+            <ul id="daftar"></ul>
+        </div>
+    </div>
+
+    <script src="tabungan.js"></script>
+</body>
+</html>
